@@ -155,8 +155,7 @@ body {
 /* Reader's choice slider*/
 .sliderTitle {
     color: #3C2A21;
-    display: flex;
-    justify-content: center;
+    display: block;
 }
 
 .sliderImg {
@@ -169,10 +168,12 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
+/* Slider background */
+
 #slider {
     background-image: url(./img2/sliderbg.png);
     background-size: cover;
-    background-position: center center;
+    background-position: center;
     border-radius: 20px;
     display: flex;
     align-items: center;
@@ -180,7 +181,7 @@ body {
     height: 70vh;
     width: 90%;
     position: relative;
-    margin: 50px 80px;
+    margin: 30px 80px;
 }
   
 .sliderWrapper {
@@ -253,7 +254,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 65vh;
+    height: 70vh;
     width: 90%;
     position: relative;
     margin: 0px 80px;
@@ -275,11 +276,17 @@ body {
     width: 200px;
     max-height: 300px;
     border-radius: 20px;
+    cursor: pointer;
 }
 
 #product1 .product .description {
     text-align: start;
     padding: 0;
+    cursor: pointer;
+}
+
+.bookTitle:hover, .authorName:hover {
+    text-decoration: underline;
 }
 
 #product1 .product .cartcircle {
@@ -312,3 +319,12 @@ body {
     border-top-right-radius: 6px;
     margin-bottom: 0;
 }
+
+.more {
+    color: #9A815A;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;   
+}
+
