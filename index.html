@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Independent Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--- Navigation Bar -->
+    <section id="header">
+        <a href="#"><img src="./img2/logo.png" class="logo" alt="logo of the store that contains its name and a drawing of an owl"></a>
+
+        <!--- Navigation Icons -->
+        <div>
+            <ul id="navbar">
+                <li>
+                    <div class="search">
+                        <input type="text" placeholder="Search..." class="searchInput">
+                        <img src="./img2/search.png" class="searchIcon">
+                    </div>
+                </li>
+                <li><a href="#"><img src="./img2/wishlist.png" class="icon"></a></li>
+                <li><a href="cart.html"><img src="./img2/cart.png" class="icon"></a></li>
+            </ul>  
+        </div>
+    </section>
+
+    <section id="headerBottom">
+        <div id="navBottom">
+            <h3 class="menuItem active">SHOP NOW</h3>
+            <h3 class="menuItem">OUR TITLES</h3>
+            <h3 class="menuItem">EVENTS</h3>
+            <h3 class="menuItem">CONTACTS</h3>
+        </div>
+    </section> 
+
+    <section id="slider">
+        <!-- Reader's Choice Slider-->
+        <div>
+            <div class="sliderTitle">
+                <h1>READER'S CHOICE</h1>
+            </div>
+                <div class="sliderWrapper">
+                    <div class="sliderItem">
+                        <a href="productpage.html"><img src="./img2/wisteria.jpg" alt="illustration of wisteria flowers and the novel title" class="sliderImg"></a>
+                    </div>
+                    <a class="sliderItem">
+                    <a href="productpage.html"><img src="./img2/untangling.jpeg" alt="illustration of a big rose the novel title" class="sliderImg"></a>
+                </div>
+                <a class="sliderItem">
+                <a href="productpage.html"><img src="./img2/recipe.jpg" alt="the novel title with small illustrations of people doing healthy activities" class="sliderImg"></a>
+                
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </section>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

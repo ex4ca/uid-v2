@@ -1,0 +1,228 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Global */
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 54px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+.section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+/* Header */
+.logo {
+    width: 300px;
+    height: auto;
+}
+
+.icon {
+    width: 25px;
+    height: 25px;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 50px;
+    background-color: #698269;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li {
+    list-style: none;
+    padding: 0 5px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    background-color: #F1DBBF;
+    padding: 2px 3px;
+    border-radius: 15px;
+}
+
+.searchInput {
+    border: none;
+    border-radius: 20px;
+    background-color: transparent;
+}
+
+.searchInput::placeholder {
+    color: #B99B6B;
+}
+
+.searchIcon {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    padding: 5px;
+    background-color: #698269;
+    border-top-right-radius: 11px;
+    border-bottom-right-radius: 11px;
+}
+
+.searchIcon:hover {
+    background-color: #596D59;
+}
+
+/* Navigation Links */
+#navBottom {
+    display: flex;
+    align-items: center;
+}
+
+.menuItem {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #B99B6B;
+    color: #E5E5CB;
+    cursor: pointer;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    padding: 10px;
+    margin-bottom: 0;
+}
+
+.menuItem.active, .menuItem:hover {
+    background-color: white;
+    color: #3C2A21;
+}
+
+#headerBottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #698269;
+    margin-bottom: 0;
+}
+
+/* Reader's choice slider*/
+#slider {
+    background-image: url(./img2/sliderbg.png);
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+  
+.sliderWrapper {
+    position: relative;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 30px 2px 0px 2px;
+    background-color: #B99B6B;
+    border-radius: 50%;
+    display: inline-block;
+    transition: 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #9A815A;
+}
+
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: auto;
+    padding: 16px;
+    color: #3C2A21;
+    font-weight: bold;
+    font-size: 30px;
+    transition: 0.6s ease;
+    border-radius: 3px;
+    user-select: none;
+}
+
+.prev {
+    left: 300px;
+}
+
+.next {
+    right: 300px;
+}
+
+.sliderTitle {
+    color: #3C2A21;
+    display: flex;
+    justify-content: center;
+}
+
+.sliderImg {
+    display: block;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    width: auto;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Buttons and dots */
+
+.prev:hover, .next:hover {
+    color: #B99B6B;
+}
+
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 0.6s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
