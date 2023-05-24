@@ -11,7 +11,7 @@ h1 {
 h2 {
     font-size: 43px;
     color: #3C2A21;
-    margin: 0;
+    margin: 5px;
 }
 
 h3 {
@@ -230,8 +230,7 @@ li {
 }
 
 #product1 .product {
-    width: 23%;
-    min-width: 200px;
+    width: 80%;
     padding: 10px 12px;
     position: relative;
     margin: 12px 0;
@@ -374,10 +373,50 @@ li {
     .sliderTitle {
         padding-top: 20px;
     }
+    .sectionTitle {
+        margin-left: 20px;
+        font-size: 18px;
+    }
     #next, #prev {
         left: 30px;
     }
     #next {
         left: 330px;
     }
+    #product1 {
+        display: flex;
+        width: 90%;
+        margin: 0px 20px;
+        flex-wrap: wrap;
+        height: 90vh;
+    }
+    #product1 .productContainer {
+        padding: 0px;
+        width: 150px;
+    }
+    #product1 .product img {
+        width: 100%;
+    }
+    #product1 .product .description {
+        max-width: 100px;
+        margin-right: 0;
+    }
+    h4 {
+        font-size: 13px;
+        margin: 5px;
+        color: #3C2A21;
+    }
+    #product1 .product .cartcircle {
+        display: none;
+    }
+    #product1 .product .wishlistcircle {
+        display: none;
+    }
+    .more {
+        position: absolute;
+        bottom: 5px;
+        right: 30px;   
+    }
+
+
 }
