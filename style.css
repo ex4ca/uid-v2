@@ -505,12 +505,12 @@ li {
     margin-top: 20px;
 }
 
-#mainImage {
-    border-radius: 10px;
-}
-
 #authorBio .singleDetails {
     width: 85%;
+}
+
+#mainImage {
+    border-radius: 10px;
 }
 
 #authorBio .singleDetails h4 {
@@ -613,6 +613,34 @@ li {
     }
     .conclusion {
         margin-left: 20px;
+    }
+
+    /* Product page responsiveness */
+    #productDetails {
+        flex-direction: column;
+        margin: 10px 20px;
+    }
+
+    #authorBio {
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+    #productDetails .singleProduct {
+        width: 100%;
+    }
+    #productDetails .singleDetails {
+        width: 100%;
+    }
+    .progress {
+        margin-left: 20px;
+    }
+    #authorBio .singleProduct {
+        width: 100%;
+        margin-left: 20px;
+    }
+    
+    #authorBio .singleDetails {
+        width: 100%;
     }
 
 }
