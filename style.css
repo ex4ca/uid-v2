@@ -345,28 +345,28 @@ li {
 }
 
 /* Search results page */
-#resultsTitle .progress {
+.progress {
     display: flex;
     margin-left: 80px;
     padding-top: 30px;
 }
 
-#resultsTitle .progress h4 {
+.progress h4 {
     font-weight: lighter;
     font-style: italic;
+}
+
+.progress a {
+    text-decoration: none;
+}
+
+.progress a:hover {
+    text-decoration: underline;
 }
 
 #resultsTitle .results h3 {
     font-weight: lighter;
     font-style: italic;
-}
-
-#resultsTitle .progress a {
-    text-decoration: none;
-}
-
-#resultsTitle .progress a:hover {
-    text-decoration: underline;
 }
 
 .results {
@@ -413,6 +413,110 @@ li {
     margin-left: 80px;
     font-weight: lighter;
     font-style: italic;
+}
+
+/* Single product page */
+#productDetails {
+    padding: 20px 30px;
+    display: flex;
+    margin-top: 20px;
+    border: 1px solid transparent;
+    background-color: #F1DBBF;
+    border-radius: 20px;
+    margin: 10px 80px;
+}
+
+#productDetails .singleProduct {
+    width: 20%;
+    margin-right: 50px;
+    margin-top: 20px;
+}
+
+#mainImage {
+    border-radius: 10px;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.addtocart {
+    background-color:#698269;
+    color: #F1DBBF;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;    
+}
+
+.addtocart:hover {
+    background-color: #596D59;
+    border: #B99B6B;
+}
+
+#productDetails .singleDetails {
+    width: 80%;
+}
+
+#productDetails .singleDetails h4 {
+    font-weight: lighter;
+    color: #3C2A21;
+    padding: 10px 0;
+}
+
+#productDetails .singleDetails h3 {
+    font-weight: lighter;
+    color:#3C2A21;
+    padding: 0;
+}
+
+.singleDetails a {
+    text-decoration: none;
+}
+
+.singleDetails a:hover {
+    text-decoration: underline;
+}
+
+/* Author Bio container */
+
+#authorBio {
+    padding: 20px 30px;
+    display: flex;
+    border: 1px solid transparent;
+    background-color: #F1DBBF;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin: 0px 80px;
+    align-items: center;
+}
+
+#authorBio .singleProduct {
+    width: 15%;
+    margin-right: 30px;
+    margin-top: 20px;
+}
+
+#mainImage {
+    border-radius: 10px;
+}
+
+#authorBio .singleDetails {
+    width: 85%;
+}
+
+#authorBio .singleDetails h4 {
+    font-weight: lighter;
+    color: #3C2A21;
+    padding: 10px 0;
 }
 
 
