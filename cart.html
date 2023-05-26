@@ -42,17 +42,26 @@
     <div class="progress">
         <a href="index.html"><h4>Home</h4></a>
         <h4> / </h4>
-        <a href="cart.html"><h4>Cart</h4></a>
+        <a href="cart.html"><h4>Review Cart</h4></a>
     </div>
 
-    <h3 class="sectionTitle"> REVIEW CART</h3>
+    <!-- Cart Summary-->
+    <div id="cartTitles">
+        <h3 class="cartTitle active">REVIEW CART</h3>
+        <h3 class="cartTitle">CHECKOUT</h3>
+        <h3 class="cartTitle">CONFIRMATION</h3>
+    </div>
+
     <section id="cartFill">
-        <!--Announcement-->
+
+    <!--Announcement-->
         <span class="announcement">FREE shipping for orders over $30 (Australia & New Zealand)</span>
     <section id="wholeCart">
         <section id="cart">
+
             <!--Create a table to display products-->
             <table width="100%">
+                <!--First Product-->
                 <tbody>
                     <tr>
                         <td><a href="#">X</a></td>
@@ -67,6 +76,8 @@
                         </td>
                     </tr>
                 </tbody>
+
+            <!--Second product-->
                 <tbody>
                     <tr>
                         <td><a href="#">X</a></td>
@@ -86,6 +97,7 @@
     
     <!--Add total section-->
         <section id="cartAdditional">
+            <!--Voucher section-->
             <div id="couponContainer">
                 <h3 class="containerTitle">Voucher</h3>
                 <div id="coupon">
@@ -96,6 +108,7 @@
             </div>
             <button class="checkout">Apply</button>
 
+        <!--Subtotal and checkout section-->
             <div id="subtotalContainer">
                 <h3 class="containerTitle">Total</h3>
                 <div id="subtotal">
@@ -115,8 +128,7 @@
                     </table>
                 </div>
             </div>
-            <button class="checkout">Checkout</button>
-    
+            <a href="checkout.html"><button class="checkout">Checkout</button>
         </section>
     </section>
 </section>
@@ -173,11 +185,7 @@
     </div>
     <h5 class="more">More like this &#8594;</h5>
 </section>
-
-
-
-
-    
+  
     <!--Footer Section-->
     <footer>
         <div class="footerTop">
