@@ -533,7 +533,7 @@ li {
 #wholeCart {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 5px 20px;
 }
 
 /* Left hand side of the cart page */
@@ -550,7 +550,7 @@ li {
     background-color: #B9CEB9;
     color: #3C2A21;
     border-radius: 20px;
-    margin: 20px;
+    margin: 5px 20px;
 }
 
 #cart table{
@@ -559,7 +559,7 @@ li {
     table-layout: fixed;
     white-space: nowrap;
     border: 1px solid #9A815A;
-    border-radius: 10px !important;
+    border-radius: 10px;
 }
 
 #cart tr:nth-child(1) td {
@@ -801,4 +801,31 @@ li {
         width: 100%;
     }
 
+    /* Cart Page */
+    #wholeCart {
+        flex-direction: column;
+    }
+    #cartFill .announcement {
+        padding: 20px 10px;
+    }
+    #cartFill {
+        margin: 0px 20px;
+        padding: 5px;
+    }
+    #cart {
+        width: 100%;
+    }
+    #cartAdditional {
+        width: 100%;
+    }
+    .couponEnter input {
+        width: 85%;
+    }
+    #cart table tr {
+        display: flex;
+        flex-direction: column;
+    }
+    #cart tr:nth-child(1) td {
+        border-bottom: transparent;
+    }
 }
