@@ -946,4 +946,20 @@ input::placeholder {
         padding: 10px;
         font-size: 12px;
     }
+    /* Confirmation page */
+    #checkoutFill {
+        margin: 0 20px;
+    }
+    .containerTitle {
+        font-size: 17px;
+    }
+    .buttons {
+        flex-direction: column-reverse;
+    }
+    form input {
+        width: 70%;
+    }
+    .checkoutForm label, .paymentForm label {
+        font-size: 15px;
+    }
 }
