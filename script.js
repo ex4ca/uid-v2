@@ -1,4 +1,4 @@
-const menuItems = document.querySelectorAll('.menuItem');
+var menuItems = document.querySelectorAll('.menuItem');
 
 // Add click event listener to each menu item
 menuItems.forEach((menuItem) => {
@@ -47,13 +47,13 @@ function loadShow(){
     }
 }
 
-    // Call function when arrow is clicked
+// Call function when arrow is clicked
+loadShow();
+next.onclick = function(){
+    active = active + 1 < items.length ? active + 1 : active;
     loadShow();
-    next.onclick = function(){
-        active = active + 1 < items.length ? active + 1 : active;
-        loadShow();
-    }
-    prev.onclick = function(){
-        active = active - 1 >= 0 ? active - 1 : active;
-        loadShow();
-    }
+}
+prev.onclick = function(){
+    active = active - 1 >= 0 ? active - 1 : active;
+    loadShow();
+}

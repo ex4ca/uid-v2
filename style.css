@@ -519,15 +519,13 @@ li {
 
 .cartTitle {
     text-align: left;
-    margin-left: 0;
+    margin: 20px 0 0 0;
     padding: 10px 20px;
     font-size: 25px;
     background-color: #B9CEB9;
     color: #E5E5CB;
     border-top-left-radius: 6px;
     border-top-right-radius: 6px;
-    margin-bottom: 0;
-    margin-right: 0;
 }
 
 .cartTitle.active {
@@ -715,7 +713,7 @@ li {
 
 .checkoutWrapper, .paymentWrapper {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     padding: 10px 20px;
     border: 1px solid #9A815A;
     margin: 0 20px;
@@ -761,7 +759,7 @@ input::placeholder {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px 20px;
+    margin: 10px 80px;
 }
 
 #backCart {
@@ -773,11 +771,26 @@ input::placeholder {
     text-decoration: underline;
 }
 
+#continuePayment {
+    display: flex;
+    justify-content: right;
+    margin-right: 0;
+}
+
+#shipping {
+    border: none;
+    color: #9A815A;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
 #purchase {
     background-color:#698269;
     color: #f6f0e9;
-    padding: 10px 20px;
-    font-size: 22px;
+    padding: 10px 30px;
+    font-size: 30px;
     font-weight: bold;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     border-radius: 10px;
@@ -787,6 +800,38 @@ input::placeholder {
     margin-bottom: 10px;
 }
 
+#paymentTotal {
+    border: 1px solid #9A815A;
+    border-radius: 10px;
+    margin: 10px 20px;
+    background-color: #9A815A;
+}
+
+/* Order COnfirmation page */
+#confirmContainer {
+    background-color: #F1DBBF;
+    margin: 0 80px;
+    padding: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#confirmationMessage {
+    text-align: center;
+    border: 1px solid #9A815A;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+#confirmationMessage img {
+    width: 200px;
+    height: 200px;
+}
+
+#confirmationMessage .message {
+    margin: 20px 0;
+}
 
 /* Media query for mobile */
 @media only screen and (max-width: 768px) {
@@ -961,5 +1006,11 @@ input::placeholder {
     }
     .checkoutForm label, .paymentForm label {
         font-size: 15px;
+    }
+    #purchase {
+        font-size: 20px;
+    }
+    #confirmContainer {
+        margin: 0 20px;
     }
 }
