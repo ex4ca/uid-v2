@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Independent Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--- Navigation Bar -->
+    <section id="header">
+        <a href="index.html"><img src="./img2/logo.png" class="logo" alt="logo of the store that contains its name and a drawing of an owl"></a>
+
+        <!--- Navigation Icons -->
+        <div>
+            <ul id="navbar">
+                <li>
+                    <div class="search">
+                        <input type="text" placeholder="Search..." class="searchInput">
+                        <a href="searchresults.html"><img src="./img2/search.png" class="searchIcon"></a>
+                    </div>
+                </li>
+                <li><a href="#"><img src="./img2/wishlist.png" class="icon"></a></li>
+                <li><a href="cart.html"><img src="./img2/cart.png" class="icon"></a></li>
+            </ul>  
+        </div>
+    </section>
+
+    <section id="headerBottom">
+        <div id="navBottom">
+            <h3 class="menuItem">SHOP NOW</h3>
+            <h3 class="menuItem">OUR TITLES</h3>
+            <h3 class="menuItem">EVENTS</h3>
+            <h3 class="menuItem">CONTACTS</h3>
+        </div>
+    </section> 
+
+    <!--User Progress-->
+    <div class="progress">
+        <a href="index.html"><h4>Home</h4></a>
+        <h4> / </h4>
+        <a href="cart.html"><h4> Review Cart</h4></a>
+        <h4> / </h4>
+        <a href="checkout.html"><h4>Checkout</h4></a>
+    </div>
+
+        <!-- Cart Summary-->
+        <div id="cartTitles">
+            <h3 class="cartTitle">REVIEW CART</h3>
+            <h3 class="cartTitle active">CHECKOUT</h3>
+            <h3 class="cartTitle">CONFIRMATION</h3>
+        </div>
+
+    <!--Checkout form-->
+    <section id="checkoutFill">
+        <section class="fullCheckout">
+            <div id="checkoutTitle">
+                <h3 class="containerTitle">Shipping Details</h3>
+            </div>
+            <div class="checkoutWrapper">
+                <div class="checkoutContainer">
+                    <form action="" class="checkoutForm">
+                        <div class="name">
+                            <div>
+                                <label for="firstName">* First Name:</label>
+                                <input type="text" name="firstName" placeholder="John">
+                            </div>
+                            <div>
+                                <label for="lastName">* Last name:</label>
+                                <input type="text" name="lastName" placeholder="Smith">
+                            </div>
+                        </div>
+
+                        <div class="contact">
+                            <div>
+                                <label for="email">* Email:</label>
+                                <input type="text" name="email" placeholder="john.smith@gmail.com">
+                            </div>
+                            <div>
+                                <label for="phone">* Phone:</label>
+                                <input type="text" name="phone" placeholder="0412 345 678">
+                            </div>
+                        </div>
+
+                        <div class="street">
+                            <label for="name">* Street Address:</label>
+                            <input type="text" name="address" placeholder="123 Lygon St">
+                        </div>
+                        <div class="addressInfo">
+                            <div>
+                                <label for="suburb">* Suburb:</label>
+                                <input type="text" name="suburb" placeholder="Melbourne">
+                            </div>
+                            <div>
+                                <label for="postcode">* Postcode:</label>
+                                <input type="text" name="postcode" placeholder="3000">
+                            </div>
+                        </div>
+                        <div class="fullAddress">
+                            <div>
+                                <label for="state">* State:</label>
+                                <input type="text" name="state" placeholder="VIC">
+                            </div>
+                            <div>
+                                <label for="country">* Country:</label>
+                                <input type="text" name="country" placeholder="Australia">
+                            </div>
+                        </div>
+                        <div class="comments">
+                            <div>
+                                <label for="comment">Comments:</label>
+                                <input type="text" name="comment" style="height: 100px;">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!--Payment form-->
+        <section class="fullPayment">
+            <div id="checkoutTitle">
+                <h3 class="containerTitle"`>Payment Information</h3>
+            </div>
+            <div class="paymentWrapper">
+                <div class="paymentContainer">
+                    <form action="" class="paymentForm">
+                        <div class="creditCard">
+                            <div>
+                                <label for="cardNum">* Credit Card No:</label>
+                                <input type="text" name="cardNum" placeholder="123 456 789">
+                            </div>
+                            <div>
+                                <label for="cardNum">* Expiry:</label>
+                                <input type="text" name="expire" placeholder="MM/YY">
+                            </div>
+                            <div>
+                                <label for="cardNum">* CCV:</label>
+                                <input type="text" name="security" placeholder="123">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <div id="paymentTotal">
+            <h3 class="containerTitle">Total</h3>
+            <div id="subtotal">
+                <table>
+                    <tr>
+                        <td>Cart subtotal</td>
+                        <td>$41.90</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping</td>
+                        <td>FREE!</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Total</strong></td>
+                        <td><strong>$41.90</strong></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+        <div class="buttons">
+            <a href="cart.html" id="backCart">Back to cart</a>
+            <a href="confirmation.html"><button id="purchase">Place Order</button></a>
+        </div>
+    </section>
+
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footerTop">
+            <h4 class="footerMessage">We acknowledge the Traditional Owners of country throughout Australia and recognise their continuing connection to land, waters and culture.</h4>
+            <br>
+            <h4 class="footerMessage">We pay our respects to their Elders past, present and emerging.</h4>
+            <br>
+            <h4>Supporting Independent Authors of Australia and New Zealand.</h4>
+        </div>
+        <div class="footerBottom">
+            <h5>218A Skipton St, Ballarat, VIC 3350</h5>
+            <div>
+                <ul id="footerIcons">
+                    <li><a href="#"><img src="./img2/facebook.png" class="footerIcon"></a></li>
+                    <li><a href="cart.html"><img src="./img2/instagram.png" class="footerIcon"></a></li>
+                </ul>  
+            </div>
+            <h5>Need Help?</h5>
+            <h5>sales@indiebookstores.com.au</h5>
+            <h5>Copyright © 2021 - 2023 Indie Book Stores</h5>
+            <h5>PRIVACY POLICY</h5>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

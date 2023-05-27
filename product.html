@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Independent Bookstore</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--- Navigation Bar -->
+    <section id="header">
+        <a href="index.html"><img src="./img2/logo.png" class="logo" alt="logo of the store that contains its name and a drawing of an owl"></a>
+
+        <!--- Navigation Icons -->
+        <div>
+            <ul id="navbar">
+                <li>
+                    <div class="search">
+                        <input type="text" placeholder="Search..." class="searchInput">
+                        <a href="searchresults.html"><img src="./img2/search.png" class="searchIcon"></a>
+                    </div>
+                </li>
+                <li><a href="#"><img src="./img2/wishlist.png" class="icon"></a></li>
+                <li><a href="cart.html"><img src="./img2/cart.png" class="icon"></a></li>
+            </ul>  
+        </div>
+    </section>
+
+    <section id="headerBottom">
+        <div id="navBottom">
+            <h3 class="menuItem active">SHOP NOW</h3>
+            <h3 class="menuItem">OUR TITLES</h3>
+            <h3 class="menuItem">EVENTS</h3>
+            <h3 class="menuItem">CONTACTS</h3>
+        </div>
+    </section> 
+    
+<!--User Progress-->
+    <div class="progress">
+        <a href="index.html"><h4>Home</h4></a>
+        <h4> / </h4>
+        <a href="searchresults.html"><h4>Search</h4></a>
+        <h4> / </h4>
+        <a href="product.html"><h4>Product page</h4></a>
+    </div>
+
+
+<!--Product description-->
+    <section id="productDetails">
+        <!--Left hand side-->
+        <div class="singleProduct">
+            <img src="./img2/wisteria.jpg" width="100%" id="mainImage">
+            <div class="buttonGroup">
+                <button class="addtocart">Add to cart</button>
+                <a href="#"><img src="./img2/wishlistcircle.png" width="40px"></a>
+            </div>
+        </div>
+
+        <!--Right hand side-->
+        <div class="singleDetails">
+            <h2>Wisteria</h2>
+            <a href="#"><h5>Georgia Mabarrack</h5></a>
+            <h3>$20.95</h3>
+            <h5>ISBN: 9781922751195</h5>
+            <h4 style="font-weight: bold;">This book is filled with my thoughts on the chaos that surrounds us.</h4>
+            <h4>
+                Its pages are scattered with ramblings about my mother’s youth and my desire to give to her all 
+                that she has given to me yet realising it would take a billion lifetimes for me to even come close. 
+                These poems speak for me. They speak about my sister’s cancer and the dark thoughts that sit in the 
+                back of my mind, relaxed on their futons, laughing at me. That wrongful desire to be loved, that lives 
+                in the deepest part of my chest, crawled its way out and found a home between the covers. My childhood 
+                traumas, fears and secrets are sprawled across the pages like a wine-stained dress. I imagine if you 
+                cracked open my skull and peered through the mess, this is what you would see. I believe that my chaos 
+                may help you walk through your own overgrown garden, to find the mystical wisteria waiting underneath 
+                the sun.
+            </h4>
+            <h4 style="font-style: italic;">
+                “A collection of emotive poems and thoughts and words that speak truth, fear and hope from a young new 
+                author who has the beginnings of a great wordsmith…” Donna, Indiebooks Reviewer.     
+            </h4>
+        </div>
+    </section>
+
+    
+<!--Product description-->
+<h3 class="sectionTitle">AUTHOR</h3>
+<section id="authorBio">
+    <!--Left hand side-->
+    <div class="singleProduct">
+        <img src="./img2/georgia.jpg" width="100%" id="mainImage">
+    </div>
+
+    <!--Right hand side-->
+    <div class="singleDetails">
+        <h4>
+            Georgia Mabarrack is a nineteen year old journalism student from South Australia, who has been writing longer 
+            than she can recall. Whether it be copying poems into her journal, academic English essays, or thirteen-page 
+            letters to her nana, this is what she needed to do; to write. This is Georgia’s debut collection of poetry, 
+            written on her bedroom floor, trying to mend her own heart, and now, hopefully yours. 
+        </h4>
+    </div>
+</section>
+
+<!--More like this Strip-->
+<h3 class="sectionTitle">MORE LIKE THIS</h3>
+<section id="product1">
+
+    <div class="productContainer">
+        <div class="product">
+            <img src="./img2/wisteria.jpg" alt="">
+            <div class="description">
+                <h4 class="bookTitle">Wisteria</h4>
+                <h5 class="authorName" style="font-style: italic;">Georgia Mabarrack</h5>
+                <h5 class="price">$24.95</h5>
+            </div>
+            <a href="#"><img src="./img2/wishlistcircle.png" class="wishlistcircle"></a>
+            <a href="#"><img src="./img2/cartcircle.png" class="cartcircle"></a>
+        </div>
+
+        <div class="product">
+            <img src="./img2/boots.jpg" alt="">
+            <div class="description">
+                <h4 class="bookTitle">Kiss My Boots</h4>
+                <h5 class="authorName" style="font-style: italic;">Jennifer Learmont</h5>
+                <h5 class="price">$24.95</h5>
+            </div>
+            <a href="#"><img src="./img2/wishlistcircle.png" class="wishlistcircle"></a>
+            <a href="#"><img src="./img2/cartcircle.png" class="cartcircle"></a>
+        </div>
+
+        <div class="product">
+            <img src="./img2/wings.jpg" alt="" class="book">
+            <div class="description">
+                <h4 class="bookTitle">Reinstate Your Wings</h4>
+                <h5 class="authorName" style="font-style: italic;">Indi Havana</h5>
+                <h5 class="price">$22.95</h5>
+            </div>
+            <a href="#"><img src="./img2/wishlistcircle.png" class="wishlistcircle"></a>
+            <a href="#"><img src="./img2/cartcircle.png" class="cartcircle"></a>
+        </div>
+
+        <div class="product">
+            <img src="./img2/beauty.jpg" alt="" class="book">
+            <div class="description">
+                <h4 class="bookTitle">Reframing Beauty</h4>
+                <h5 class="authorName" style="font-style: italic;">Anita Selzer</h5>
+                <h5 class="price">$24.95</h5>
+            </div>
+            <a href="#"><img src="./img2/wishlistcircle.png" class="wishlistcircle"></a>
+            <a href="#"><img src="./img2/cartcircle.png" class="cartcircle"></a>
+        </div>
+    </div>
+    <h5 class="more">More like this &#8594;</h5>
+</section>
+
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footerTop">
+            <h4 class="footerMessage">We acknowledge the Traditional Owners of country throughout Australia and recognise their continuing connection to land, waters and culture.</h4>
+            <br>
+            <h4 class="footerMessage">We pay our respects to their Elders past, present and emerging.</h4>
+            <br>
+            <h4>Supporting Independent Authors of Australia and New Zealand.</h4>
+        </div>
+        <div class="footerBottom">
+            <h5>218A Skipton St, Ballarat, VIC 3350</h5>
+            <div>
+                <ul id="footerIcons">
+                    <li><a href="#"><img src="./img2/facebook.png" class="footerIcon"></a></li>
+                    <li><a href="cart.html"><img src="./img2/instagram.png" class="footerIcon"></a></li>
+                </ul>  
+            </div>
+            <h5>Need Help?</h5>
+            <h5>sales@indiebookstores.com.au</h5>
+            <h5>Copyright © 2021 - 2023 Indie Book Stores</h5>
+            <h5>PRIVACY POLICY</h5>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

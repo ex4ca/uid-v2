@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Independent Bookstore</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <!--- Navigation Bar -->
+    <section id="header">
+        <a href="./index.html"><img src="./img2/logo.png" class="logo" alt="logo of the store that contains its name and a drawing of an owl"></a>
+
+        <!--- Navigation Icons -->
+        <div>
+            <ul id="navbar">
+                <li>
+                    <div class="search">
+                        <input type="text" placeholder="Search..." class="searchInput">
+                        <a href="./searchresults.html"><img src="./img2/search.png" class="searchIcon"></a>
+                    </div>
+                </li>
+                <li><a href="#"><img src="./img2/wishlist.png" class="icon"></a></li>
+                <li><a href="./cart.html"><img src="./img2/cart.png" class="icon"></a></li>
+            </ul>  
+        </div>
+    </section>
+
+    <section id="headerBottom">
+        <div id="navBottom">
+            <h3 class="menuItem">SHOP NOW</h3>
+            <h3 class="menuItem">OUR TITLES</h3>
+            <h3 class="menuItem">EVENTS</h3>
+            <h3 class="menuItem">CONTACTS</h3>
+        </div>
+    </section> 
+
+    <div id="cartTitles">
+        <h3 class="cartTitle">REVIEW CART</h3>
+        <h3 class="cartTitle">CHECKOUT</h3>
+        <h3 class="cartTitle active">CONFIRMATION</h3>
+    </div>
+
+
+    <!--Confirmation message-->
+    <section id="confirmContainer">
+        <section id="confirmationMessage">
+            <img src="./img2/tick.png">
+            <h3 class="message">Your order has been confirmed!</h3>
+            <h4 class="message">We'll send you a shipping confirmation email shortly.</h4>
+            <h5 class="message">Order No. 123456789</h5>
+            <a href="./index.html"><button class="checkout">Continue Shopping</button></a>
+        </section>
+    </section>
+
+
+<!--More like this Strip-->
+<h3 class="sectionTitle">MORE LIKE THIS</h3>
+<section id="product1">
+
+    <div class="productContainer">
+        <div class="product">
+            <a href="./product.html"><img src="./img2/wisteria.jpg" alt=""></a>
+            <div class="description">
+                <a href="./product.html" style="text-decoration: none;"><h4 class="bookTitle">Wisteria</h4></a>
+                <h5 class="authorName" style="font-style: italic;">Georgia Mabarrack</h5>
+                <h5 class="price">$24.95</h5>
+            </div>
+            <a href="#"><img src="./img2/wishlistcircle.png" class="wishlistcircle"></a>
+            <a href="#"><img src="./img2/cartcircle.png" class="cartcircle"></a>
+        </div>
+
+        <div class="product">
+            <img src="./img2/boots.jpg" alt="">
+            <div class="description">
+                <h4 class="bookTitle">Kiss My Boots</h4>
+                <h5 class="authorName" style="font-style: italic;">Jennifer Learmont</h5>
+                <h5 class="price">$24.95</h5>
+            </div>
+            <a href="#"><img src="./img2/wishlistcircle.png" class="wishlistcircle"></a>
+            <a href="#"><img src="./img2/cartcircle.png" class="cartcircle"></a>
+        </div>
+
+        <div class="product">
+            <img src="./img2/wings.jpg" alt="" class="book">
+            <div class="description">
+                <h4 class="bookTitle">Reinstate Your Wings</h4>
+                <h5 class="authorName" style="font-style: italic;">Indi Havana</h5>
+                <h5 class="price">$22.95</h5>
+            </div>
+            <a href="#"><img src="./img2/wishlistcircle.png" class="wishlistcircle"></a>
+            <a href="#"><img src="./img2/cartcircle.png" class="cartcircle"></a>
+        </div>
+
+        <div class="product">
+            <img src="./img2/beauty.jpg" alt="" class="book">
+            <div class="description">
+                <h4 class="bookTitle">Reframing Beauty</h4>
+                <h5 class="authorName" style="font-style: italic;">Anita Selzer</h5>
+                <h5 class="price">$24.95</h5>
+            </div>
+            <a href="#"><img src="./img2/wishlistcircle.png" class="wishlistcircle"></a>
+            <a href="#"><img src="./img2/cartcircle.png" class="cartcircle"></a>
+        </div>
+    </div>
+    <h5 class="more">More like this &#8594;</h5>
+</section>
+
+    <!--Footer Section-->
+    <footer>
+        <div class="footerTop">
+            <h4 class="footerMessage">We acknowledge the Traditional Owners of country throughout Australia and recognise their continuing connection to land, waters and culture.</h4>
+            <br>
+            <h4 class="footerMessage">We pay our respects to their Elders past, present and emerging.</h4>
+            <br>
+            <h4>Supporting Independent Authors of Australia and New Zealand.</h4>
+        </div>
+        <div class="footerBottom">
+            <h5>218A Skipton St, Ballarat, VIC 3350</h5>
+            <div>
+                <ul id="footerIcons">
+                    <li><a href="#"><img src="./img2/facebook.png" class="footerIcon"></a></li>
+                    <li><a href="./cart.html"><img src="./img2/instagram.png" class="footerIcon"></a></li>
+                </ul>  
+            </div>
+            <h5>Need Help?</h5>
+            <h5>sales@indiebookstores.com.au</h5>
+            <h5>Copyright © 2021 - 2023 Indie Book Stores</h5>
+            <h5>PRIVACY POLICY</h5>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+</html>
