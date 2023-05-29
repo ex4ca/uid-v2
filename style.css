@@ -249,8 +249,8 @@ li {
 }
 
 #product1 .product img:hover {
-    transition: 0.3s ease;
-    box-shadow: 4px 4px 4px rgba(87, 87, 87, 0.2);
+    transition: 0.2s ease;
+    box-shadow: 6px 6px 6px rgba(0, 0, 0, 0.2);
 }
 
 #product1 .product .description {
